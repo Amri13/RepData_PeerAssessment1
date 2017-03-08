@@ -2,7 +2,9 @@
 title: 'Reproducible Research: Monitoring Activity'
 author: "Amritha"
 date: "7 March 2017"
-output: html_document
+output:
+  md_document:
+    variant: markdown_github
 ---
 
 ```{r setup, include=FALSE}
@@ -138,19 +140,3 @@ p<-xyplot(dailysteps4$x~dailysteps4$Group.1|dailysteps4$Group.2,type='l',main="A
 print(p)
 
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
